@@ -1,9 +1,31 @@
 Background
--------------
+-------------------------------------------------------------------------------
 
-bemokoLive plugin that 
+bemokoLive plugin that reads content from a Yaml file and makes it available
+for rendering in the UI templates.
+
+What It Is: YAML is a human friendly data serialization standard for all 
+programming languages.  In otherwise a slightly technical, but clean data
+format (with less angular brackets than XML)- http://www.yaml.org/
+
 
 Installation
--------------
+-------------------------------------------------------------------------------
 
-Drop yaml/YamlReader.groovy in the plugins folder of your site
+* Drop yaml/YamlReader.groovy in the plugins folder of your site
+
+
+Usage
+-------------------------------------------------------------------------------
+
+Define content source in your bemoko site
+
+  <content-sources>
+    <source name="yaml" plugin="yaml.YamlReader" scope="site">
+      <param name="filepath">data/content.yaml</param>
+    </source>
+  </content-sources>
+
+and access content from the YAML file within a UI template like
+
+  <h1>${content.yaml.home.title}</h1>
