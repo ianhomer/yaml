@@ -1,0 +1,12 @@
+Test
+-------------------------------------------------------------------------------
+
+With bemokoLive deployed at the context called live and server from a server on
+port 8080, checkout the test project into your ~/bemoko/sites directory 
+
+  cd ~/bemoko/sites
+  git@github.com:ianhomer/yaml.git
+
+and access
+
+  http://localhost:8080/live/yaml/test/i
