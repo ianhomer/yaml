@@ -1,0 +1,19 @@
+# Plugin : yaml : Test Content
+#
+# Content in YAML format - see http://www.yaml.org/
+
+home: 
+  title: create mobile websites
+  welcome: >
+    The bemokoLive framework solves the problem of delivering a great user
+    experience when delivering content and services to a wide range of 
+    mobile handsets.
+  mobile:
+    welcome : >
+      The bemokoLive framework solves the problem of delivering a great user
+      experience to a wide range of mobile handsets.
+links:
+  - url: /i
+    text: "Link 1"
+  - url: /i
+    text: "Link 2"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    yaml plugin configuration file
+ -->
+<site>
+  <content-sources>
+    <source name="yaml" plugin="yaml.YamlReader" scope="site">
+      <param name="filepath">data/content.yaml</param>
+    </source>
+  </content-sources>
+
+  <intents>
+    <intent name="i" type="template" view="test.html"/>
+  </intents>  
+</site>
