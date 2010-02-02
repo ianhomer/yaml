@@ -17,7 +17,6 @@ package yaml
 
 class YamlReader extends com.bemoko.live.platform.mwc.plugins.AbstractPlugin {
   def data
-  private static DEFAULT_ENCODING="UTF-8"
 
   /**
    * Load the yaml data
@@ -30,7 +29,7 @@ class YamlReader extends com.bemoko.live.platform.mwc.plugins.AbstractPlugin {
       inputStream = new FileInputStream(new File(resource))
       data = org.ho.yaml.Yaml.load(
         new BufferedReader(
-          new InputStreamReader(inputStream, p.encoding ?: DEFAULT_ENCODING)
+          new InputStreamReader(inputStream, p.encoding ?: 'UTF-8')
         )
       )
     } finally {
