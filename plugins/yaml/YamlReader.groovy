@@ -13,6 +13,7 @@
  * 
  * Copyright 2010 bemoko 
  */
+package yaml
 
 class YamlReader extends com.bemoko.live.platform.mwc.plugins.AbstractPlugin {
   def data
