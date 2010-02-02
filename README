@@ -4,7 +4,7 @@ Background
 bemokoLive plugin that reads content from a Yaml file and makes it available
 for rendering in the UI templates.
 
-What It Is: YAML is a human friendly data serialization standard for all 
+What Is YAML?: YAML is a human friendly data serialization standard for all 
 programming languages.  In otherwise a slightly technical, but clean data
 format (with less angular brackets than XML)- http://www.yaml.org/
 
@@ -26,6 +26,7 @@ Define content source in your bemoko site
     </source>
   </content-sources>
 
+create the YAML file data/content.yaml and add some content in the YAML format
 and access content from the YAML file within a UI template like
 
   <h1>${content.yaml.home.title}</h1>
